@@ -5,6 +5,12 @@
         <link rel="icon" href="./icon.webp">
         <link rel="stylesheet" href="./style.css" type="text/css"/>
         <link rel="stylesheet" href="./utils.css" type="text/css"/>
+        <script>
+            function changemode(){
+                let mybody = document.body;
+                mybody.classList.toggle('mydark')
+            }
+        </script>
     </head>
     <body>
         <header class="container">
@@ -19,6 +25,7 @@
                     <li>BEAUTY</li>
                     <li>STUDIO</li>
                 </ul>
+                <icon onclick="changemode()"><img src="./bulb img.png" alt="icon"></button>
                 </div>
                 <div class="right flex item-center">
                     <input class="bar" type="text" placeholder="search for product & brand">
